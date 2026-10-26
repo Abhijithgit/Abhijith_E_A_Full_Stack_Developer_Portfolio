@@ -1,0 +1,34 @@
+{
+  "name": "abhijith-angular-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.mjs",
+    "build": "ng build",
+    "check:logic": "node scripts/check-logic.mjs",
+    "serve": "node server/index.mjs",
+    "dev": "ng serve --host 127.0.0.1 --port 4200 --proxy-config proxy.conf.json",
+    "api:dev": "node server/dev.mjs",
+    "owner:setup": "node server/setup-owner.mjs",
+    "owner:password": "node server/setup-owner.mjs --change-password",
+    "test:server": "node --test server/server.test.mjs"
+  },
+  "dependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "rxjs": "^7.8.2",
+    "tslib": "^2.8.1",
+    "@angular/forms": "^21.0.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "typescript": "~5.9.3"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
